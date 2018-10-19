@@ -26,8 +26,42 @@
   </head>
 
   <body>
-    <%= yield %>
+        <div class="container pt-5">
+  <div class="row">
+    <div class="col-4 mb-3">
+      <a href="rock" class="btn btn-block btn-outline-info">
+        <i class="far fa-hand-rock fa-fw"></i>
 
+        Play Rock
+      </a>
+    </div>
+
+
+    <div class="col-4 mb-3">
+      <a href="paper" class="btn btn-block btn-outline-info">
+        <i class="far fa-hand-paper fa-fw"></i>
+
+        Play Paper
+      </a>
+    </div>
+
+    <div class="col-4 mb-3">
+      <a href="scissors" class="btn btn-block btn-outline-info">
+        <i class="far fa-hand-scissors fa-fw"></i>
+
+        Play Scissors
+      </a>
+    </div>
+  </div>
+
+    <%= yield %>
+      <div class="row text-center">
+    <div class="col-md-12">
+      <a href="/">
+        Rules
+      </a>
+    </div>
+  </div>
     <%= dev_tools if Rails.env.development? %>
   </body>
 </html>

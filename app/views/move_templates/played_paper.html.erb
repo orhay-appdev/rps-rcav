@@ -1,0 +1,35 @@
+  <div class="row text-center">
+    <div class="col-sm-6 mb-3">
+      <div class="card border-success">
+        <div class="card-body text-success">
+          <h2 class="card-title">We played paper!</h2>
+
+          <p class="card-text">
+            <i class="far fa-hand-paper fa-10x"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 mb-3">
+      <div class="card border-danger">
+        <div class="card-body text-danger">
+          <h2 class="card-title">They played <%=@computer_move%>!</h2>
+
+          <p class="card-text">
+              <i class="far fa-hand-<%=@computer_move%> fa-10x"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-md-12">
+        <div class="alert alert-dismissible alert-<%=@color%>">
+        <h2 class="display-3">
+          We <%=@outcome%>!
+        </h2>
+      </div>
+    </div>
+  </div>
